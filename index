@@ -1,0 +1,92 @@
+<!-- Iitlhokomeleng Association for Aged & Disabled — Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home — Iitlhokomeleng Association for Aged & Disabled</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Iitlhokomeleng logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Compassionate Care for the Aged & Disabled</h1>
+        <p>Supporting dignity, independence, and community inclusion.</p>
+        <div class="cta-group">
+          <a href="enquiry.html" class="btn btn-primary">Volunteer</a>
+          <a href="enquiry.html" class="btn btn-secondary">Sponsor / Donate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Snapshot -->
+    <section class="mission">
+      <div class="container">
+        <h2>Our Mission</h2>
+        <p>[Insert confirmed mission statement here.]</p>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+      <div class="container">
+        <h2>What We Do</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Home-Based Care</h3>
+            <p>[Brief description of home-based care services.]</p>
+          </article>
+          <article class="card">
+            <h3>Social Support</h3>
+            <p>[Brief description of social support and outreach.]</p>
+          </article>
+          <article class="card">
+            <h3>Advocacy</h3>
+            <p>[Brief description of advocacy and referrals.]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact / Call to Action -->
+    <section class="impact">
+      <div class="container">
+        <h2>Make a Difference Today</h2>
+        <p>Join our volunteers or support our programs to help elders and persons with disabilities live with dignity.</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Iitlhokomeleng Association for Aged & Disabled. All rights reserved.</p>
+      <p>[Phone] | [Email] | [Physical Address]</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

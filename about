@@ -1,0 +1,86 @@
+<!-- Iitlhokomeleng Association for Aged & Disabled — About Us Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us — Iitlhokomeleng Association for Aged & Disabled</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header & Navigation (same across all pages) -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Iitlhokomeleng logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Our Story -->
+    <section class="page-intro">
+      <div class="container">
+        <h1>About Iitlhokomeleng</h1>
+        <p>[Insert brief, confirmed history of the organization here.]</p>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+      <div class="container">
+        <h2>Mission & Vision</h2>
+        <div class="two-col">
+          <div>
+            <h3>Mission</h3>
+            <p>[Insert confirmed mission statement.]</p>
+          </div>
+          <div>
+            <h3>Vision</h3>
+            <p>[Insert confirmed vision statement.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team / Leadership -->
+    <section class="team">
+      <div class="container">
+        <h2>Our Team</h2>
+        <div class="cards">
+          <!-- Repeat for each team member -->
+          <article class="card">
+            <img src="images/team1.jpg" alt="Team member name" />
+            <h3>[Name]</h3>
+            <p>[Role / Brief bio.]</p>
+          </article>
+          <!-- Add more team cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners (optional) -->
+    <section class="partners">
+      <div class="container">
+        <h2>Partners & Supporters</h2>
+        <p>[List or logos of partner organizations, if available.]</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same across all pages) -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Iitlhokomeleng Association for Aged & Disabled. All rights reserved.</p>
+      <p>[Phone] | [Email] | [Physical Address]</p>
+    </div>
+  </footer>

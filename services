@@ -1,0 +1,78 @@
+<!-- Iitlhokomeleng Association for Aged & Disabled — Services Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services — Iitlhokomeleng Association for Aged & Disabled</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Iitlhokomeleng logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p>Support designed to promote dignity, safety, and inclusion for older persons and persons with disabilities.</p>
+      </div>
+    </section>
+
+    <!-- Service List -->
+    <section class="services-list">
+      <div class="container">
+        <article class="service-item">
+          <h2>Home-Based Care</h2>
+          <p>[Describe home visits, basic care support, monitoring, and referrals.]</p>
+        </article>
+        <article class="service-item">
+          <h2>Social Support & Outreach</h2>
+          <p>[Describe community groups, welfare checks, and social activities.]</p>
+        </article>
+        <article class="service-item">
+          <h2>Advocacy & Referrals</h2>
+          <p>[Describe assistance accessing government services, clinics, and grants.]</p>
+        </article>
+        <!-- Add more services as confirmed -->
+      </div>
+    </section>
+
+    <!-- How to Access -->
+    <section class="how-to-access">
+      <div class="container">
+        <h2>How to Access Support</h2>
+        <ol>
+          <li>Contact us via phone, email, or the form on the Contact page.</li>
+          <li>Share basic details (name, location, support needed).</li>
+          <li>Our team will assess and link you to appropriate services.</li>
+        </ol>
+        <a href="enquiry.html" class="btn">Request Support</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Iitlhokomeleng Association for Aged & Disabled. All rights reserved.</p>
+      <p>[Phone] | [Email] | [Physical Address]</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

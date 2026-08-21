@@ -1,0 +1,31 @@
+/* Global resets and base styles */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Open Sans", system-ui, sans-serif; line-height: 1.6; color: #37474F; background: #FAFAFA; }
+img { max-width: 100%; display: block; }
+.container { width: 90%; max-width: 1100px; margin: 0 auto; }
+
+/* Header & Nav */
+header { background: #00695C; color: #fff; padding: 0.75rem 0; position: sticky; top: 0; z-index: 100; }
+header .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.logo img { height: 40px; width: auto; }
+nav ul { list-style: none; display: flex; gap: 1rem; }
+nav a { color: #fff; text-decoration: none; font-weight: 600; }
+
+/* Hero */
+.hero { background: #FFE0B2; padding: 3rem 0; text-align: center; }
+.hero h1 { font-family: "Montserrat", system-ui, sans-serif; font-size: 2rem; margin-bottom: 0.5rem; }
+.cta-group { display: flex; gap: 0.75rem; justify-content: center; margin-top: 1rem; }
+.btn { display: inline-block; padding: 0.6rem 1rem; background: #00695C; color: #fff; text-decoration: none; border-radius: 4px; border: 0; cursor: pointer; }
+.btn-secondary { background: #FFA726; }
+
+/* Cards */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.card { background: #fff; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+
+/* Forms */
+.form-section, .contact-details { padding: 2rem 0; }
+form { display: grid; gap: 0.75rem; max-width: 500px; }
+input, select, textarea { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; font: inherit; }
+
+/* Footer */
+footer { background: #263238; color: #ECEFF1; padding: 1rem 0; margin-top: 2rem; text-align: center; }

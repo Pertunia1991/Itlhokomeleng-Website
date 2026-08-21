@@ -1,0 +1,127 @@
+<!-- Iitlhokomeleng Association for Aged & Disabled — Get Involved / Enquiry Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Get Involved — Iitlhokomeleng Association for Aged & Disabled</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Iitlhokomeleng logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <h1>Get Involved</h1>
+        <p>Volunteer with us, become a sponsor, or request support for someone in need.</p>
+      </div>
+    </section>
+
+    <!-- Volunteer Form -->
+    <section class="form-section">
+      <div class="container">
+        <h2>Volunteer Enquiry</h2>
+        <form id="volunteer-form" action="#" method="post">
+          <label for="v-name">Full Name</label>
+          <input type="text" id="v-name" name="v-name" required />
+
+          <label for="v-email">Email</label>
+          <input type="email" id="v-email" name="v-email" required />
+
+          <label for="v-phone">Phone</label>
+          <input type="tel" id="v-phone" name="v-phone" required />
+
+          <label for="v-interest">Area of Interest</label>
+          <select id="v-interest" name="v-interest">
+            <option>Home visits</option>
+            <option>Admin support</option>
+            <option>Events & outreach</option>
+            <option>Other</option>
+          </select>
+
+          <label for="v-message">Message</label>
+          <textarea id="v-message" name="v-message" rows="4"></textarea>
+
+          <button type="submit" class="btn">Submit Volunteer Enquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Sponsor/Donate Form -->
+    <section class="form-section">
+      <div class="container">
+        <h2>Sponsor / Donate Enquiry</h2>
+        <form id="sponsor-form" action="#" method="post">
+          <label for="s-name">Full Name / Organization</label>
+          <input type="text" id="s-name" name="s-name" required />
+
+          <label for="s-email">Email</label>
+          <input type="email" id="s-email" name="s-email" required />
+
+          <label for="s-phone">Phone</label>
+          <input type="tel" id="s-phone" name="s-phone" />
+
+          <label for="s-type">Support Type</label>
+          <select id="s-type" name="s-type">
+            <option>Monthly sponsorship</option>
+            <option>One-off donation</option>
+            <option>In-kind support</option>
+          </select>
+
+          <label for="s-message">Message</label>
+          <textarea id="s-message" name="s-message" rows="4"></textarea>
+
+          <button type="submit" class="btn">Submit Sponsor Enquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Request Support (for families/beneficiaries) -->
+    <section class="form-section">
+      <div class="container">
+        <h2>Request Support</h2>
+        <form id="support-form" action="#" method="post">
+          <label for="sup-name">Your Name</label>
+          <input type="text" id="sup-name" name="sup-name" required />
+
+          <label for="sup-contact">Contact Number</label>
+          <input type="tel" id="sup-contact" name="sup-contact" required />
+
+          <label for="sup-location">Location / Area</label>
+          <input type="text" id="sup-location" name="sup-location" required />
+
+          <label for="sup-needs">Support Needed</label>
+          <textarea id="sup-needs" name="sup-needs" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Submit Support Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Iitlhokomeleng Association for Aged & Disabled. All rights reserved.</p>
+      <p>[Phone] | [Email] | [Physical Address]</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
