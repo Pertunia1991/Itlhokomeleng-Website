@@ -1,31 +1,345 @@
-/* Global resets and base styles */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: "Open Sans", system-ui, sans-serif; line-height: 1.6; color: #37474F; background: #FAFAFA; }
-img { max-width: 100%; display: block; }
-.container { width: 90%; max-width: 1100px; margin: 0 auto; }
+/* =========================================
+   ITLHOKOMELENG WEBSITE - MAIN STYLESHEET
+   ========================================= */
 
-/* Header & Nav */
-header { background: #00695C; color: #fff; padding: 0.75rem 0; position: sticky; top: 0; z-index: 100; }
-header .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.logo img { height: 40px; width: auto; }
-nav ul { list-style: none; display: flex; gap: 1rem; }
-nav a { color: #fff; text-decoration: none; font-weight: 600; }
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* Hero */
-.hero { background: #FFE0B2; padding: 3rem 0; text-align: center; }
-.hero h1 { font-family: "Montserrat", system-ui, sans-serif; font-size: 2rem; margin-bottom: 0.5rem; }
-.cta-group { display: flex; gap: 0.75rem; justify-content: center; margin-top: 1rem; }
-.btn { display: inline-block; padding: 0.6rem 1rem; background: #00695C; color: #fff; text-decoration: none; border-radius: 4px; border: 0; cursor: pointer; }
-.btn-secondary { background: #FFA726; }
+/* Base Styles */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.6;
+  color: #37474F;
+  background-color: #FAFAFA;
+}
 
-/* Cards */
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
-.card { background: #fff; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-/* Forms */
-.form-section, .contact-details { padding: 2rem 0; }
-form { display: grid; gap: 0.75rem; max-width: 500px; }
-input, select, textarea { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; font: inherit; }
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-/* Footer */
-footer { background: #263238; color: #ECEFF1; padding: 1rem 0; margin-top: 2rem; text-align: center; }
+/* =========================================
+   HEADER & NAVIGATION
+   ========================================= */
+
+header {
+  background-color: #00695C;
+  color: #FFFFFF;
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFA726;
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 105, 92, 0.65), rgba(0, 105, 92, 0.65)),
+    url("../images/hero.png");
+
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Call-to-action buttons */
+.cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.4rem;
+  background-color: #00695C;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004D40;
+}
+
+.btn-primary {
+  background-color: #FFA726;
+  color: #263238;
+}
+
+.btn-primary:hover {
+  background-color: #FB8C00;
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: #00695C;
+}
+
+.btn-secondary:hover {
+  background-color: #E0F2F1;
+}
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+.mission,
+.services-overview,
+.impact,
+.page-intro,
+.mission-vision,
+.team,
+.partners,
+.services-list,
+.how-to-access,
+.form-section,
+.contact-details,
+.map-section {
+  padding: 3rem 0;
+}
+
+section h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #00695C;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+/* =========================================
+   MISSION SECTION
+   ========================================= */
+
+.mission {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.mission .container {
+  max-width: 850px;
+}
+
+/* =========================================
+   SERVICES CARDS
+   ========================================= */
+
+.services-overview {
+  background-color: #F1F8F6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #00695C;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  color: #00695C;
+  margin-bottom: 0.75rem;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* =========================================
+   IMPACT / CALL TO ACTION
+   ========================================= */
+
+.impact {
+  background-color: #00695C;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.impact h2 {
+  color: #FFFFFF;
+}
+
+.impact .btn {
+  margin-top: 0.5rem;
+  background-color: #FFA726;
+  color: #263238;
+}
+
+/* =========================================
+   TWO-COLUMN LAYOUT
+   ========================================= */
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================================
+   FORMS
+   ========================================= */
+
+form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 600px;
+}
+
+label {
+  font-weight: 600;
+  color: #37474F;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #B0BEC5;
+  border-radius: 5px;
+  font: inherit;
+  background-color: #FFFFFF;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #80CBC4;
+  border-color: #00695C;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  background-color: #263238;
+  color: #ECEFF1;
+  padding: 1.5rem 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0.4rem;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 767px) {
+
+  header .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+}
+
