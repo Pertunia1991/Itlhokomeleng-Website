@@ -1,19 +1,42 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Home — Itlhokomeleng Association for Aged & Disabled</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Itlhokomeleng Association | Aged and Disability Care in Alexandra</title>
+
+  <meta name="description" content="Learn about Itlhokomeleng Association for the Aged and Disabled in Alexandra. Discover our community care services and how to volunteer or support our work." />
+
+  <meta name="keywords" content="Itlhokomeleng Association, aged care, disability support, community care, Alexandra, volunteer, sponsor community support" />
+
+  <meta name="author" content="Itlhokomeleng Association for the Aged and Disabled" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <!-- Header & Navigation -->
+  <!-- Header and Navigation -->
   <header>
     <div class="container">
-      <a href="index.html" class="logo">
-        <img src="images/Logo.png" alt="itlhokomeleng logo" />
+      <a href="index.html" class="logo" aria-label="Itlhokomeleng Association home">
+        <img src="images/Logo.png" alt="Itlhokomeleng Association logo" />
       </a>
-      <nav>
+
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation">
+        ☰
+      </button>
+
+      <nav id="primary-navigation" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="enquiry.html">Get Involved</a></li>
@@ -28,20 +51,27 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <h1>Itlhokomeleng Association for the Aged and Disabled.</h1>
-        <p>Compassionate Care for the Aged & Disabled.</p>
+        <h1>Itlhokomeleng Association for the Aged and Disabled</h1>
+
+        <p>Compassionate care, dignity and support for our community.</p>
+
         <div class="cta-group">
           <a href="enquiry.html" class="btn btn-primary">Volunteer</a>
-          <a href="enquiry.html" class="btn btn-secondary">Sponsor / Donate</a>
+          <a href="enquiry.html" class="btn btn-secondary">Sponsor or Donate</a>
         </div>
       </div>
     </section>
 
-    <!-- Mission Snapshot -->
+    <!-- Mission Section -->
     <section class="mission">
       <div class="container">
         <h2>Our Mission</h2>
-        <p>To provide compassionate care, dignity, support and meaningful assistance to elderly and Disabled people while contributing positively to the Alexandra community.</p>
+
+        <p>
+          To provide compassionate care, dignity, support and meaningful
+          assistance to older persons and persons with disabilities while
+          contributing positively to the Alexandra community.
+        </p>
       </div>
     </section>
 
@@ -49,28 +79,51 @@
     <section class="services-overview">
       <div class="container">
         <h2>What We Do</h2>
+
         <div class="cards">
           <article class="card">
             <h3>Home-Based Care</h3>
-            <p>Our volunteers visit older persons and persons with disabilities at home to provide basic care support, monitoring, and engagement.</p>
+            <p>
+              Our volunteers visit older persons and persons with disabilities
+              at home to provide basic care support, monitoring and engagement.
+            </p>
           </article>
+
           <article class="card">
             <h3>Social Support</h3>
-            <p>We run community outreach programmes, welfare checks, and social activities to reduce isolation and improve well-being.</p>
+            <p>
+              We support community outreach, welfare checks and social
+              activities aimed at reducing isolation and improving well-being.
+            </p>
           </article>
+
           <article class="card">
             <h3>Advocacy</h3>
-            <p>We help beneficiaries access government services, clinics, and grants, and advocate for thgeir rights and dignity.</p>
+            <p>
+              We help beneficiaries access relevant government services,
+              healthcare and social grants while promoting their rights
+              and dignity.
+            </p>
           </article>
         </div>
+
+        <p>
+          <a href="services.html" class="btn">Explore Our Services</a>
+        </p>
       </div>
     </section>
 
-    <!-- Impact / Call to Action -->
+    <!-- Call to Action -->
     <section class="impact">
       <div class="container">
         <h2>Make a Difference Today</h2>
-        <p>Join our volunteers or support our programs to help elders and persons with disabilities live with dignity.</p>
+
+        <p>
+          Join our volunteers or support our programmes to help older persons
+          and persons with disabilities live with dignity.
+        </p>
+
+        <a href="enquiry.html" class="btn">Get Involved</a>
         <a href="contact.html" class="btn">Contact Us</a>
       </div>
     </section>
@@ -79,11 +132,19 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 Itlhokomeleng Association for Aged & Disabled. All rights reserved.</p>
-      <p>011 443 3705 | help@itlhokomeleng@gmail.com | 141 8th Ave, Alexandra, 2090</p>
+      <p>
+        &copy; <span id="current-year">2026</span>
+        Itlhokomeleng Association for the Aged and Disabled.
+        All rights reserved.
+      </p>
+
+      <p>Telephone: 011 443 3705</p>
+      <p>Email: <a href="mailto:help@itlhokomeleng@gmail.com">help@itlhokomeleng@gmail.com</a></p>
+      <p>Address: 141 8th Avenue, Alexandra, 2090</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
 </html>
+```

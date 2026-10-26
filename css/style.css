@@ -1,15 +1,19 @@
+```css
 /* =========================================
    ITLHOKOMELENG WEBSITE - MAIN STYLESHEET
    ========================================= */
 
-/* Global Reset */
+/* GLOBAL RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.6;
@@ -72,13 +76,43 @@ nav a:hover {
   color: #FFA726;
 }
 
+/* Current page indicator */
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+/* Keyboard accessibility */
+.nav-toggle:focus-visible,
+nav a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid #FFA726;
+  outline-offset: 4px;
+}
+
+/* Mobile menu button - hidden on desktop */
+.nav-toggle {
+  display: none;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 0.4rem 0.7rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 /* =========================================
    HERO SECTION
    ========================================= */
 
 .hero {
   background:
-    linear-gradient(rgba(0, 105, 92, 0.65), rgba(0, 105, 92, 0.65)),
+    linear-gradient(
+      rgba(0, 105, 92, 0.65),
+      rgba(0, 105, 92, 0.65)
+    ),
     url("../images/hero.png");
 
   background-size: cover;
@@ -91,6 +125,7 @@ nav a:hover {
 .hero h1 {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 2.7rem;
+  line-height: 1.25;
   margin-bottom: 1rem;
 }
 
@@ -99,7 +134,10 @@ nav a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Call-to-action buttons */
+/* =========================================
+   BUTTONS & CALLS TO ACTION
+   ========================================= */
+
 .cta-group {
   display: flex;
   gap: 1rem;
@@ -116,6 +154,7 @@ nav a:hover {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  font: inherit;
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
@@ -143,7 +182,7 @@ nav a:hover {
 }
 
 /* =========================================
-   SECTIONS
+   GENERAL PAGE SECTIONS
    ========================================= */
 
 .mission,
@@ -165,6 +204,7 @@ section h2 {
   font-family: "Montserrat", Arial, sans-serif;
   color: #00695C;
   font-size: 2rem;
+  line-height: 1.3;
   margin-bottom: 1rem;
 }
 
@@ -195,7 +235,10 @@ section p {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -206,7 +249,9 @@ section p {
   border-radius: 8px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   border-top: 4px solid #00695C;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -238,6 +283,10 @@ section p {
   margin-top: 0.5rem;
   background-color: #FFA726;
   color: #263238;
+}
+
+.impact .btn:hover {
+  background-color: #FB8C00;
 }
 
 /* =========================================
@@ -291,7 +340,24 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: 2px solid #80CBC4;
+  outline-offset: 1px;
   border-color: #00695C;
+}
+
+/* Validation feedback styles */
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color: #B71C1C;
+}
+
+.error-message {
+  color: #B71C1C;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  color: #00695C;
+  font-weight: 600;
 }
 
 /* =========================================
@@ -310,20 +376,58 @@ footer p {
   margin-bottom: 0.4rem;
 }
 
+footer a {
+  color: #FFFFFF;
+  text-underline-offset: 3px;
+}
+
+footer a:hover {
+  color: #FFA726;
+}
+
 /* =========================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN & MOBILE NAVIGATION
    ========================================= */
 
 @media (max-width: 767px) {
-
   header .container {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  header nav {
+    display: none;
+    width: 100%;
+  }
+
+  header nav.nav-open {
+    display: block;
   }
 
   nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 0.75rem;
+  }
+
+  nav li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  nav a {
+    display: block;
+    padding: 0.75rem 0;
   }
 
   .hero {
@@ -341,5 +445,53 @@ footer p {
   section h2 {
     font-size: 1.6rem;
   }
+
+  .cta-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-group .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .mission,
+  .services-overview,
+  .impact,
+  .page-intro,
+  .mission-vision,
+  .team,
+  .partners,
+  .services-list,
+  .how-to-access,
+  .form-section,
+  .contact-details,
+  .map-section {
+    padding: 2.25rem 0;
+  }
 }
 
+/* =========================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+```
