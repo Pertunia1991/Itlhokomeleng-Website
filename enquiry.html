@@ -1,127 +1,275 @@
-<!-- Itlhokomeleng Association for Aged & Disabled — Get Involved / Enquiry Page -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Get Involved — Itlhokomeleng Association for Aged & Disabled</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Get involved with Itlhokomeleng Association through volunteering, sponsorship, donations and requests for community support.">
+
+    <meta name="keywords" content="volunteer, sponsorship, donations, aged care, disability support, Alexandra">
+
+    <title>Get Involved | Itlhokomeleng Association</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="Itlhokomeleng logo" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="enquiry.html">Get Involved</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
+<header>
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            <img src="images/Logo.png" alt="Itlhokomeleng Association logo">
+        </a>
+
+        <button class="nav-toggle" type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            ☰
+        </button>
+
+        <nav id="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" aria-current="page">Get Involved</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
     <section class="page-intro">
-      <div class="container">
-        <h1>Get Involved</h1>
-        <p>Volunteer with us, become a sponsor, or request support for someone in need.</p>
-      </div>
+        <div class="container">
+            <h1>Get Involved</h1>
+
+            <p>
+                Become part of our mission. Volunteer with us,
+                support our initiatives through sponsorship or donations,
+                or request assistance for someone in need.
+            </p>
+        </div>
     </section>
 
-    <!-- Volunteer Form -->
+    <!-- Volunteer Enquiry -->
+
     <section class="form-section">
-      <div class="container">
-        <h2>Volunteer Enquiry</h2>
-        <form id="volunteer-form" action="#" method="post">
-          <label for="v-name">Full Name</label>
-          <input type="text" id="v-name" name="v-name" required />
+        <div class="container">
 
-          <label for="v-email">Email</label>
-          <input type="email" id="v-email" name="v-email" required />
+            <h2>Volunteer Enquiry</h2>
 
-          <label for="v-phone">Phone</label>
-          <input type="tel" id="v-phone" name="v-phone" required />
+            <p>
+                We welcome individuals who are passionate about
+                making a difference in the lives of older persons
+                and people living with disabilities.
+            </p>
 
-          <label for="v-interest">Area of Interest</label>
-          <select id="v-interest" name="v-interest">
-            <option>Home visits</option>
-            <option>Admin support</option>
-            <option>Events & outreach</option>
-            <option>Other</option>
-          </select>
+            <form id="volunteer-form" class="enquiry-form">
 
-          <label for="v-message">Message</label>
-          <textarea id="v-message" name="v-message" rows="4"></textarea>
+                <label for="v-name">Full Name</label>
+                <input type="text" id="v-name" name="name"
+                       required minlength="2">
 
-          <button type="submit" class="btn">Submit Volunteer Enquiry</button>
-        </form>
-      </div>
+                <label for="v-email">Email Address</label>
+                <input type="email" id="v-email" name="email"
+                       required>
+
+                <label for="v-phone">Phone Number</label>
+                <input type="tel" id="v-phone" name="phone"
+                       required pattern="[0-9+() -]{7,20}">
+
+                <label for="v-interest">Area of Interest</label>
+
+                <select id="v-interest" name="interest" required>
+                    <option value="">Select an area</option>
+                    <option>Home visits</option>
+                    <option>Administrative support</option>
+                    <option>Events and outreach</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="v-message">Tell Us More</label>
+                <textarea id="v-message" name="message"
+                          rows="4" required></textarea>
+
+                <button type="submit" class="btn">
+                    Submit Volunteer Enquiry
+                </button>
+
+                <p id="volunteer-feedback"
+                   class="form-feedback"
+                   role="status"
+                   aria-live="polite"></p>
+
+            </form>
+        </div>
     </section>
 
-    <!-- Sponsor/Donate Form -->
+    <!-- Sponsorship and Donations -->
+
     <section class="form-section">
-      <div class="container">
-        <h2>Sponsor / Donate Enquiry</h2>
-        <form id="sponsor-form" action="#" method="post">
-          <label for="s-name">Full Name / Organization</label>
-          <input type="text" id="s-name" name="s-name" required />
+        <div class="container">
 
-          <label for="s-email">Email</label>
-          <input type="email" id="s-email" name="s-email" required />
+            <h2>Sponsor or Donate</h2>
 
-          <label for="s-phone">Phone</label>
-          <input type="tel" id="s-phone" name="s-phone" />
+            <p>
+                Your contribution can help strengthen our efforts
+                to support older persons and people living with disabilities.
+            </p>
 
-          <label for="s-type">Support Type</label>
-          <select id="s-type" name="s-type">
-            <option>Monthly sponsorship</option>
-            <option>One-off donation</option>
-            <option>In-kind support</option>
-          </select>
+            <form id="sponsor-form" class="enquiry-form">
 
-          <label for="s-message">Message</label>
-          <textarea id="s-message" name="s-message" rows="4"></textarea>
+                <label for="s-name">Full Name or Organisation</label>
+                <input type="text" id="s-name" name="name"
+                       required minlength="2">
 
-          <button type="submit" class="btn">Submit Sponsor Enquiry</button>
-        </form>
-      </div>
+                <label for="s-email">Email Address</label>
+                <input type="email" id="s-email" name="email"
+                       required>
+
+                <label for="s-phone">Phone Number</label>
+                <input type="tel" id="s-phone" name="phone"
+                       pattern="[0-9+() -]{7,20}">
+
+                <label for="s-type">Type of Support</label>
+
+                <select id="s-type" name="supportType" required>
+                    <option value="">Select support type</option>
+                    <option>Monthly sponsorship</option>
+                    <option>One-off donation</option>
+                    <option>In-kind support</option>
+                </select>
+
+                <label for="s-message">Message</label>
+                <textarea id="s-message" name="message"
+                          rows="4" required></textarea>
+
+                <button type="submit" class="btn">
+                    Submit Sponsorship Enquiry
+                </button>
+
+                <p id="sponsor-feedback"
+                   class="form-feedback"
+                   role="status"
+                   aria-live="polite"></p>
+
+            </form>
+        </div>
     </section>
 
-    <!-- Request Support (for families/beneficiaries) -->
+    <!-- Request Support -->
+
     <section class="form-section">
-      <div class="container">
-        <h2>Request Support</h2>
-        <form id="support-form" action="#" method="post">
-          <label for="sup-name">Your Name</label>
-          <input type="text" id="sup-name" name="sup-name" required />
+        <div class="container">
 
-          <label for="sup-contact">Contact Number</label>
-          <input type="tel" id="sup-contact" name="sup-contact" required />
+            <h2>Request Support</h2>
 
-          <label for="sup-location">Location / Area</label>
-          <input type="text" id="sup-location" name="sup-location" required />
+            <p>
+                If you or someone you know needs assistance,
+                please provide your contact information and
+                a brief description of the support required.
+            </p>
 
-          <label for="sup-needs">Support Needed</label>
-          <textarea id="sup-needs" name="sup-needs" rows="4" required></textarea>
+            <form id="support-form" class="enquiry-form">
 
-          <button type="submit" class="btn">Submit Support Request</button>
-        </form>
-      </div>
+                <label for="sup-name">Full Name</label>
+                <input type="text" id="sup-name" name="name"
+                       required minlength="2">
+
+                <label for="sup-contact">Contact Number</label>
+                <input type="tel" id="sup-contact" name="phone"
+                       required pattern="[0-9+() -]{7,20}">
+
+                <label for="sup-location">Location or Area</label>
+                <input type="text" id="sup-location" name="location"
+                       required>
+
+                <label for="sup-needs">Support Needed</label>
+                <textarea id="sup-needs" name="needs"
+                          rows="4" required minlength="10"></textarea>
+
+                <button type="submit" class="btn">
+                    Submit Support Request
+                </button>
+
+                <p id="support-feedback"
+                   class="form-feedback"
+                   role="status"
+                   aria-live="polite"></p>
+
+            </form>
+        </div>
     </section>
-  </main>
 
-  <footer>
+    <!-- Contact Information -->
+
+    <section class="contact-details">
+        <div class="container">
+
+            <h2>Need More Information?</h2>
+
+            <p>
+                Contact our organisation directly for assistance
+                or further information.
+            </p>
+
+            <p>
+                <strong>Primary Phone:</strong>
+                <a href="tel:+27114433705">+27 11 443 3705</a>
+            </p>
+
+            <p>
+                <strong>Founder &amp; CEO:</strong>
+                Dr. Marjorie Manganye
+            </p>
+
+            <p>
+                <strong>Direct Contact:</strong>
+                <a href="tel:+27828946942">082 894 6942</a>
+            </p>
+
+            <p>
+                <strong>Address:</strong>
+                141 8th Avenue, Alexandra, Johannesburg, 2090
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
     <div class="container">
-      <p>&copy; 2026 Itlhokomeleng Association for Aged & Disabled. All rights reserved.</p>
-      <p>[Phone] | [Email] | [Physical Address]</p>
-    </div>
-  </footer>
 
-  <script src="js/main.js"></script>
+        <p>
+            &copy; <span class="current-year">2026</span>
+            Itlhokomeleng Association for Aged &amp; Disabled.
+            All rights reserved.
+        </p>
+
+        <p>
+            Primary Phone:
+            <a href="tel:+27114433705">+27 11 443 3705</a>
+        </p>
+
+        <p>
+            Founder &amp; CEO: Dr. Marjorie Manganye
+        </p>
+
+        <p>
+            Address: 141 8th Avenue, Alexandra, Johannesburg, 2090
+        </p>
+
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>

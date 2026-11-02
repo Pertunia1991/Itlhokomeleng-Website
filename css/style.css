@@ -644,3 +644,263 @@ footer a:hover {
         transition: none;
     }
 }
+
+/* Contact and enquiry forms */
+
+.form-section,
+.contact-details {
+    padding: 45px 20px;
+}
+
+.form-section:nth-of-type(even) {
+    background-color: #FAFAFA;
+}
+
+.enquiry-form,
+#contact-form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.enquiry-form label,
+#contact-form label {
+    display: block;
+    margin: 15px 0 7px;
+    color: #37474F;
+    font-weight: 600;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea,
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus,
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    outline: 2px solid #00695C;
+    border-color: #00695C;
+}
+
+.enquiry-form button,
+#contact-form button {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form-feedback {
+    margin-top: 15px;
+    color: #00695C;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.form-section h2,
+.contact-details h2 {
+    color: #00695C;
+}
+
+.map-section {
+    padding: 40px 20px;
+}
+
+.map-section iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+
+    .enquiry-form,
+    #contact-form {
+        padding: 18px;
+    }
+
+}
+
+/* Community photo gallery */
+
+.gallery-section {
+    padding: 60px 20px;
+    background-color: #FAFAFA;
+}
+
+.gallery-section h2 {
+    color: #00695C;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    text-align: left;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img,
+.gallery-item:focus-visible img {
+    transform: scale(1.05);
+}
+
+.gallery-item span {
+    display: block;
+    padding: 14px;
+    color: #00695C;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery-item:focus-visible {
+    outline: 3px solid #FFA726;
+    outline-offset: 3px;
+}
+
+/* Enlarged image lightbox */
+
+.gallery-lightbox {
+    width: min(90%, 850px);
+    max-width: 850px;
+    padding: 25px;
+    border: none;
+    border-radius: 12px;
+    background: #FFFFFF;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-lightbox img {
+    display: block;
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.gallery-lightbox p {
+    color: #37474F;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.close-lightbox {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 10px;
+    border: none;
+    background: #00695C;
+    color: #FFFFFF;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 240px;
+    }
+
+    .gallery-lightbox {
+        padding: 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-item img {
+        transition: none;
+    }
+}
+
+/* Facebook video section */
+.video-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.video-section h2 {
+    color: #00695C;
+    margin-bottom: 15px;
+}
+
+.video-section p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    color: #37474F;
+}
+
+.video-container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

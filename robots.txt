@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://pertunia1991.github.io/Itlhokomeleng-Website/sitemap.xml
